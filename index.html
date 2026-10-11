@@ -1,65 +1,405 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="佘健鹏的个人主页，记录环境设计学习与绘画成长。">
-    <title>佘健鹏 | 个人主页</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="navbar">
-        <a class="logo" href="#home">SJP.</a>
-        <nav>
-            <a href="#about">关于我</a>
-            <a href="#interests">兴趣爱好</a>
-            <a href="#contact">联系我</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero" id="home">
-            <p class="eyebrow">WELCOME TO MY WORLD</p>
-            <h1>你好，我是<br><span>佘健鹏</span></h1>
-            <p class="intro">广东海洋大学 · 环境设计 · 大一学生</p>
-            <p class="motto">Practice makes perfect.</p>
-            <a class="button" href="#about">认识一下我 ↓</a>
-        </section>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
 
-        <section class="section" id="about">
-            <p class="eyebrow">ABOUT ME</p>
-            <h2>关于我</h2>
-            <p>你好！我是佘健鹏，目前就读于广东海洋大学环境设计专业。</p>
-            <p>我正在探索设计与艺术的世界，希望通过不断练习和学习，把想法变成有趣的作品。</p>
-        </section>
+:root {
+  --paper: #f4eddf;
+  --ink: #20201d;
+  --orange: #ff623d;
+  --blue: #a8c5ff;
+  --yellow: #f4d84d;
+  --line: rgba(32, 32, 29, .2);
+}
 
-        <section class="section" id="interests">
-            <p class="eyebrow">MY INTERESTS</p>
-            <h2>兴趣爱好</h2>
-            <div class="interest-card">
-                <div class="interest-icon">✎</div>
-                <h3>绘画与设计</h3>
-                <p>用线条记录灵感，用设计表达想法。</p>
-            </div>
-            <div class="interest-card">
-                <div class="interest-icon">✦</div>
-                <h3>持续学习</h3>
-                <p>Practice makes perfect. 每天进步一点点。</p>
-            </div>
-        </section>
+* {
+  box-sizing: border-box;
+}
 
-        <section class="section" id="contact">
-            <p class="eyebrow">GET IN TOUCH</p>
-            <h2>联系我</h2>
-            <p>欢迎交流学习、设计与绘画。</p>
-            <a class="button" href="mailto:2338739197@qq.com">给我发邮件</a>
-            <p class="email">2338739197@qq.com</p>
-        </section>
-    </main>
+html {
+  scroll-behavior: smooth;
+}
 
-    <footer>
-        <p>© 2026 佘健鹏 · 个人主页</p>
-        <p>Practice makes perfect.</p>
-    </footer>
-</body>
-</html>
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', 'Noto Sans SC', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.topbar {
+  min-height: 70px;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.brand span {
+  color: var(--orange);
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.lang-btn {
+  border: 1px solid var(--ink);
+  border-radius: 30px;
+  background: transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hero {
+  min-height: 590px;
+  padding: 95px 9% 100px;
+  position: relative;
+  overflow: hidden;
+  background: var(--yellow);
+}
+
+.eyebrow,
+.tag,
+.count,
+.work-date {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(44px, 9vw, 100px);
+  line-height: 1.08;
+  letter-spacing: -4px;
+  max-width: 850px;
+  margin: 24px 0;
+}
+
+.intro {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+  font-size: 15px;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 20px;
+  border-radius: 3px;
+  background: var(--ink);
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  transition: transform .2s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero-sticker {
+  position: absolute;
+  z-index: 1;
+  right: 8%;
+  bottom: 65px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: white;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.1;
+  transform: rotate(12deg);
+  font-size: 24px;
+}
+
+.hero-shapes .shape {
+  position: absolute;
+  display: block;
+}
+
+.shape-one {
+  width: 170px;
+  height: 170px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  right: 18%;
+  top: 80px;
+}
+
+.shape-two {
+  width: 90px;
+  height: 90px;
+  background: var(--blue);
+  right: 7%;
+  top: 100px;
+  transform: rotate(20deg);
+}
+
+.shape-three {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--ink);
+  left: 48%;
+  bottom: 25px;
+  transform: rotate(45deg);
+}
+
+.section {
+  padding: 85px 9%;
+}
+
+.section h2,
+.contact h2 {
+  margin: 10px 0 20px;
+  font-size: clamp(30px, 5vw, 52px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.about {
+  max-width: 1050px;
+}
+
+.about > p:last-child,
+.news-intro {
+  max-width: 650px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.count {
+  opacity: .65;
+  text-align: right;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.work-card {
+  min-width: 0;
+}
+
+.work-image {
+  position: relative;
+  min-height: 260px;
+  aspect-ratio: 4 / 5;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.work-image > span {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.work-a {
+  background: var(--orange);
+}
+
+.work-b {
+  background: var(--blue);
+}
+
+.work-c {
+  background: #c9d6a2;
+}
+
+.placeholder-art {
+  font-size: clamp(26px, 4vw, 48px);
+  font-weight: 900;
+  line-height: .95;
+  text-align: center;
+  letter-spacing: -2px;
+  transform: rotate(-8deg);
+}
+
+.work-b .placeholder-art {
+  transform: rotate(8deg);
+}
+
+.work-info {
+  padding: 12px 2px 22px;
+}
+
+.tag {
+  color: #68665d;
+}
+
+.work-info h3,
+.news-card h3 {
+  font-size: 21px;
+  line-height: 1.35;
+  margin: 8px 0;
+}
+
+.work-info > p:not(.tag):not(.work-date) {
+  font-size: 13px;
+}
+
+.work-date {
+  opacity: .6;
+  font-size: 10px;
+}
+
+.note {
+  color: #6d6a61;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.news-section {
+  background: #e7e0d3;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.news-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.news-card > p:not(.tag) {
+  font-size: 14px;
+}
+
+.news-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contact {
+  padding: 90px 9%;
+  background: var(--orange);
+}
+
+.contact .eyebrow {
+  margin-bottom: 20px;
+}
+
+.contact .primary-btn {
+  background: var(--ink);
+}
+
+footer {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 610px;
+    padding: 80px 7%;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 12vw, 70px);
+    letter-spacing: -2px;
+  }
+
+  .hero-sticker {
+    width: 105px;
+    height: 105px;
+    right: 8%;
+    bottom: 35px;
+    font-size: 18px;
+  }
+
+  .shape-one {
+    width: 110px;
+    height: 110px;
+    right: 12%;
+    top: 40px;
+  }
+
+  .shape-two {
+    width: 55px;
+    height: 55px;
+    right: 6%;
+    top: 65px;
+  }
+
+  .shape-three {
+    width: 55px;
+    height: 55px;
+    left: 12%;
+    bottom: 60px;
+  }
+
+  .section {
+    padding: 60px 7%;
+  }
+
+  .works-grid,
+  .news-list {
+    grid-template-columns: 1fr;
+  }
+
+  .work-image {
+    min-height: 300px;
+    aspect-ratio: 5 / 4;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .count {
+    text-align: left;
+  }
+
+  footer {
+    padding: 20px 7%;
+    flex-wrap: wrap;
+  }
+}
