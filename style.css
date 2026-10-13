@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
 
 :root {
@@ -403,3 +402,242 @@ footer {
     flex-wrap: wrap;
   }
 }
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eddf">
+  <title>佘健鹏 | Creative Portfolio</title>
+  <meta name="description" content="佘健鹏的个人艺术、环境设计与科技灵感网站。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">SJP<span>®</span></a>
+    <button id="langBtn" class="lang-btn">English / 中文</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow" data-zh="环境设计 · 艺术 · 科技"
+         data-en="ENVIRONMENT DESIGN · ART · TECH">
+        环境设计 · 艺术 · 科技
+      </p>
+      <h1 data-zh="让灵感，<br>变成看得见的世界。"
+          data-en="TURN IDEAS<br>INTO WORLDS.">
+        让灵感，<br>变成看得见的世界。
+      </h1>
+      <p class="intro"
+         data-zh="你好，我是佘健鹏，广东海洋大学环境设计专业大一学生。正在学习绘画、空间设计与数字创作。"
+         data-en="Hi, I'm Jianpeng She, a first-year Environmental Design student at Guangdong Ocean University, exploring drawing, spatial design and digital creativity.">
+        你好，我是佘健鹏，广东海洋大学环境设计专业大一学生。正在学习绘画、空间设计与数字创作。
+      </p>
+      <a class="primary-btn" href="#works"
+         data-zh="探索我的作品 ↓" data-en="EXPLORE MY WORKS ↓">
+        探索我的作品 ↓
+      </a>
+      <div class="hero-sticker" aria-hidden="true">MAKE<br>IT<br>REAL!</div>
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape-one"></span>
+        <span class="shape shape-two"></span>
+        <span class="shape shape-three"></span>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <p class="eyebrow">01 / ABOUT ME</p>
+      <h2 data-zh="持续练习，持续生长。" data-en="PRACTICE. GROW. REPEAT.">
+        持续练习，持续生长。
+      </h2>
+      <p data-zh="Practice makes perfect. 我相信每一次观察、绘画与尝试，都在积累未来设计的可能。这里将记录我的学习过程、作品与灵感。"
+         data-en="Practice makes perfect. Every observation, sketch and experiment creates new possibilities. This site documents my learning, projects and inspiration.">
+        Practice makes perfect. 我相信每一次观察、绘画与尝试，都在积累未来设计的可能。这里将记录我的学习过程、作品与灵感。
+      </p>
+    </section>
+
+    <section id="works" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / PORTFOLIO</p>
+          <h2 data-zh="我的作品" data-en="SELECTED WORKS">我的作品</h2>
+        </div>
+        <span class="count">ART / DESIGN</span>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card">
+          <div class="work-image work-a">
+            <span>01</span>
+            <div class="placeholder-art">YOUR<br>ARTWORK</div>
+          </div>
+          <div class="work-info">
+            <p class="tag">DRAWING / 绘画</p>
+            <h3 data-zh="绘画练习" data-en="Drawing Studies">绘画练习</h3>
+            <p data-zh="在这里介绍你的绘画主题、创作过程与灵感。"
+               data-en="Describe your subject, process and inspiration here.">
+              在这里介绍你的绘画主题、创作过程与灵感。
+            </p>
+            <p class="work-date">DATE / 待添加</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-image work-b">
+            <span>02</span>
+            <div class="placeholder-art">SPACE<br>& FORM</div>
+          </div>
+          <div class="work-info">
+            <p class="tag">SPATIAL DESIGN / 空间</p>
+            <h3 data-zh="空间与形态" data-en="Space & Form">空间与形态</h3>
+            <p data-zh="展示环境设计草图、空间构思或课堂练习。"
+               data-en="Show environmental design sketches, spatial ideas or class projects.">
+              展示环境设计草图、空间构思或课堂练习。
+            </p>
+            <p class="work-date">DATE / 待添加</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-image work-c">
+            <span>03</span>
+            <div class="placeholder-art">COLOR<br>LAB</div>
+          </div>
+          <div class="work-info">
+            <p class="tag">EXPERIMENT / 实验</p>
+            <h3 data-zh="色彩实验" data-en="Color Experiments">色彩实验</h3>
+            <p data-zh="记录配色研究、视觉实验和数字创作。"
+               data-en="Document color studies, visual experiments and digital creations.">
+              记录配色研究、视觉实验和数字创作。
+            </p>
+            <p class="work-date">DATE / 待添加</p>
+          </div>
+        </article>
+      </div>
+      <p class="note" data-zh="以上是作品展示模板，替换成自己的真实作品后即可使用。"
+         data-en="These are portfolio placeholders. Replace them with your own work.">
+        以上是作品展示模板，替换成自己的真实作品后即可使用。
+      </p>
+    </section>
+
+    <section id="news" class="section news-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / DAILY DISCOVERY</p>
+          <h2 data-zh="设计与科技新闻" data-en="DESIGN & TECH NEWS">
+            设计与科技新闻
+          </h2>
+        </div>
+        <span class="count">ART × AI × TECH</span>
+      </div>
+
+      <p class="news-intro"
+         data-zh="关注 AI 工具、创意设计与全球科技动态。新闻经审核后才会在这里公开。"
+         data-en="Discover AI tools, creative design and global tech. Stories appear here after review.">
+        关注 AI 工具、创意设计与全球科技动态。新闻经审核后才会在这里公开。
+      </p>
+      <div id="newsList" class="news-list">
+        <article class="news-card">
+          <p class="tag">WELCOME / 欢迎</p>
+          <h3 data-zh="你的每日灵感站正在搭建中"
+              data-en="Your daily inspiration hub is coming soon">
+            你的每日灵感站正在搭建中
+          </h3>
+          <p data-zh="完成新闻自动收集与审核工作流后，审核通过的新闻会显示在这里。"
+             data-en="Approved stories will appear here after the news collection and review workflow is configured.">
+            完成新闻自动收集与审核工作流后，审核通过的新闻会显示在这里。
+          </p>
+        </article>
+      </div>
+      <p id="newsStatus" class="note"></p>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="eyebrow">04 / LET'S CONNECT</p>
+      <h2 data-zh="灵感还在继续。" data-en="MORE TO COME.">灵感还在继续。</h2>
+      <p data-zh="欢迎交流艺术、设计与科技。" data-en="Let's talk about art, design and technology.">
+        欢迎交流艺术、设计与科技。
+      </p>
+      <a href="mailto:2338739197@qq.com" class="primary-btn">CONTACT ME ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 SJP CREATIVE STUDIO</span>
+    <a href="#about">BACK TO TOP ↑</a>
+  </footer>
+
+  <script>
+    const langBtn = document.getElementById("langBtn");
+    let currentLang = "zh";
+
+    langBtn.addEventListener("click", () => {
+      currentLang = currentLang === "zh" ? "en" : "zh";
+      document.documentElement.lang =
+        currentLang === "zh" ? "zh-CN" : "en";
+
+      document.querySelectorAll("[data-zh][data-en]").forEach(el => {
+        el.innerHTML = el.dataset[currentLang];
+      });
+    });
+
+    // 新闻仅显示已经审核并放入 news.json 的内容。
+    async function loadNews() {
+      const list = document.getElementById("newsList");
+      const status = document.getElementById("newsStatus");
+
+      try {
+        const response = await fetch("./news.json?time=" + Date.now());
+        if (!response.ok) throw new Error("News file not found");
+
+        const data = await response.json();
+        list.replaceChildren();
+
+        if (!Array.isArray(data) || data.length === 0) {
+          status.textContent = "暂无已审核新闻 / No approved stories yet.";
+          return;
+        }
+
+        data.forEach(item => {
+          const article = document.createElement("article");
+          article.className = "news-card";
+
+          const tag = document.createElement("p");
+          tag.className = "tag";
+          tag.textContent = item.category || "DESIGN / TECH";
+
+          const title = document.createElement("h3");
+          title.textContent = currentLang === "zh"
+            ? (item.title_zh || item.title || "")
+            : (item.title_en || item.title || item.title_zh || "");
+
+          const summary = document.createElement("p");
+          summary.textContent = currentLang === "zh"
+            ? (item.summary_zh || item.summary || "")
+            : (item.summary_en || item.summary || item.summary_zh || "");
+
+          article.append(tag, title, summary);
+
+          if (item.url && /^https?:\/\//i.test(item.url)) {
+            const link = document.createElement("a");
+            link.href = item.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.className = "news-link";
+            link.textContent = currentLang === "zh"
+              ? "阅读原文 ↗" : "Read source ↗";
+            article.append(link);
+          }
+
+          list.append(article);
+        });
+      } catch (error) {
+        status.textContent =
+          "新闻数据尚未配置，请完成后续新闻工作流设置。";
+      }
+    }
+
+    loadNews();
+  </script>
+</body>
+</html>
