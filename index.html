@@ -1,405 +1,240 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eddf">
+  <title>佘健鹏 | Creative Portfolio</title>
+  <meta name="description" content="佘健鹏的个人艺术、环境设计与科技灵感网站。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">SJP<span>®</span></a>
+    <button id="langBtn" class="lang-btn">English / 中文</button>
+  </header>
 
-:root {
-  --paper: #f4eddf;
-  --ink: #20201d;
-  --orange: #ff623d;
-  --blue: #a8c5ff;
-  --yellow: #f4d84d;
-  --line: rgba(32, 32, 29, .2);
-}
+  <main>
+    <section class="hero">
+      <p class="eyebrow" data-zh="环境设计 · 艺术 · 科技"
+         data-en="ENVIRONMENT DESIGN · ART · TECH">
+        环境设计 · 艺术 · 科技
+      </p>
+      <h1 data-zh="让灵感，<br>变成看得见的世界。"
+          data-en="TURN IDEAS<br>INTO WORLDS.">
+        让灵感，<br>变成看得见的世界。
+      </h1>
+      <p class="intro"
+         data-zh="你好，我是佘健鹏，广东海洋大学环境设计专业大一学生。正在学习绘画、空间设计与数字创作。"
+         data-en="Hi, I'm Jianpeng She, a first-year Environmental Design student at Guangdong Ocean University, exploring drawing, spatial design and digital creativity.">
+        你好，我是佘健鹏，广东海洋大学环境设计专业大一学生。正在学习绘画、空间设计与数字创作。
+      </p>
+      <a class="primary-btn" href="#works"
+         data-zh="探索我的作品 ↓" data-en="EXPLORE MY WORKS ↓">
+        探索我的作品 ↓
+      </a>
+      <div class="hero-sticker" aria-hidden="true">MAKE<br>IT<br>REAL!</div>
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape-one"></span>
+        <span class="shape shape-two"></span>
+        <span class="shape shape-three"></span>
+      </div>
+    </section>
 
-* {
-  box-sizing: border-box;
-}
+    <section id="about" class="section about">
+      <p class="eyebrow">01 / ABOUT ME</p>
+      <h2 data-zh="持续练习，持续生长。" data-en="PRACTICE. GROW. REPEAT.">
+        持续练习，持续生长。
+      </h2>
+      <p data-zh="Practice makes perfect. 我相信每一次观察、绘画与尝试，都在积累未来设计的可能。这里将记录我的学习过程、作品与灵感。"
+         data-en="Practice makes perfect. Every observation, sketch and experiment creates new possibilities. This site documents my learning, projects and inspiration.">
+        Practice makes perfect. 我相信每一次观察、绘画与尝试，都在积累未来设计的可能。这里将记录我的学习过程、作品与灵感。
+      </p>
+    </section>
 
-html {
-  scroll-behavior: smooth;
-}
+    <section id="works" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / PORTFOLIO</p>
+          <h2 data-zh="我的作品" data-en="SELECTED WORKS">我的作品</h2>
+        </div>
+        <span class="count">ART / DESIGN</span>
+      </div>
 
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'DM Sans', 'Noto Sans SC', sans-serif;
-  line-height: 1.7;
-}
+      <div class="works-grid">
+        <article class="work-card">
+          <div class="work-image work-a">
+            <span>01</span>
+            <div class="placeholder-art">YOUR<br>ARTWORK</div>
+          </div>
+          <div class="work-info">
+            <p class="tag">DRAWING / 绘画</p>
+            <h3 data-zh="绘画练习" data-en="Drawing Studies">绘画练习</h3>
+            <p data-zh="在这里介绍你的绘画主题、创作过程与灵感。"
+               data-en="Describe your subject, process and inspiration here.">
+              在这里介绍你的绘画主题、创作过程与灵感。
+            </p>
+            <p class="work-date">DATE / 待添加</p>
+          </div>
+        </article>
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+        <article class="work-card">
+          <div class="work-image work-b">
+            <span>02</span>
+            <div class="placeholder-art">SPACE<br>& FORM</div>
+          </div>
+          <div class="work-info">
+            <p class="tag">SPATIAL DESIGN / 空间</p>
+            <h3 data-zh="空间与形态" data-en="Space & Form">空间与形态</h3>
+            <p data-zh="展示环境设计草图、空间构思或课堂练习。"
+               data-en="Show environmental design sketches, spatial ideas or class projects.">
+              展示环境设计草图、空间构思或课堂练习。
+            </p>
+            <p class="work-date">DATE / 待添加</p>
+          </div>
+        </article>
 
-button {
-  font: inherit;
-}
+        <article class="work-card">
+          <div class="work-image work-c">
+            <span>03</span>
+            <div class="placeholder-art">COLOR<br>LAB</div>
+          </div>
+          <div class="work-info">
+            <p class="tag">EXPERIMENT / 实验</p>
+            <h3 data-zh="色彩实验" data-en="Color Experiments">色彩实验</h3>
+            <p data-zh="记录配色研究、视觉实验和数字创作。"
+               data-en="Document color studies, visual experiments and digital creations.">
+              记录配色研究、视觉实验和数字创作。
+            </p>
+            <p class="work-date">DATE / 待添加</p>
+          </div>
+        </article>
+      </div>
+      <p class="note" data-zh="以上是作品展示模板，替换成自己的真实作品后即可使用。"
+         data-en="These are portfolio placeholders. Replace them with your own work.">
+        以上是作品展示模板，替换成自己的真实作品后即可使用。
+      </p>
+    </section>
 
-.topbar {
-  min-height: 70px;
-  padding: 16px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--line);
-}
+    <section id="news" class="section news-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / DAILY DISCOVERY</p>
+          <h2 data-zh="设计与科技新闻" data-en="DESIGN & TECH NEWS">
+            设计与科技新闻
+          </h2>
+        </div>
+        <span class="count">ART × AI × TECH</span>
+      </div>
 
-.brand {
-  font-size: 25px;
-  font-weight: 900;
-  letter-spacing: -2px;
-}
+      <p class="news-intro"
+         data-zh="关注 AI 工具、创意设计与全球科技动态。新闻经审核后才会在这里公开。"
+         data-en="Discover AI tools, creative design and global tech. Stories appear here after review.">
+        关注 AI 工具、创意设计与全球科技动态。新闻经审核后才会在这里公开。
+      </p>
+      <div id="newsList" class="news-list">
+        <article class="news-card">
+          <p class="tag">WELCOME / 欢迎</p>
+          <h3 data-zh="你的每日灵感站正在搭建中"
+              data-en="Your daily inspiration hub is coming soon">
+            你的每日灵感站正在搭建中
+          </h3>
+          <p data-zh="完成新闻自动收集与审核工作流后，审核通过的新闻会显示在这里。"
+             data-en="Approved stories will appear here after the news collection and review workflow is configured.">
+            完成新闻自动收集与审核工作流后，审核通过的新闻会显示在这里。
+          </p>
+        </article>
+      </div>
+      <p id="newsStatus" class="note"></p>
+    </section>
 
-.brand span {
-  color: var(--orange);
-  font-size: 12px;
-  vertical-align: top;
-}
+    <section id="contact" class="contact">
+      <p class="eyebrow">04 / LET'S CONNECT</p>
+      <h2 data-zh="灵感还在继续。" data-en="MORE TO COME.">灵感还在继续。</h2>
+      <p data-zh="欢迎交流艺术、设计与科技。" data-en="Let's talk about art, design and technology.">
+        欢迎交流艺术、设计与科技。
+      </p>
+      <a href="mailto:2338739197@qq.com" class="primary-btn">CONTACT ME ↗</a>
+    </section>
+  </main>
 
-.lang-btn {
-  border: 1px solid var(--ink);
-  border-radius: 30px;
-  background: transparent;
-  padding: 8px 15px;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 700;
-}
+  <footer>
+    <span>© 2026 SJP CREATIVE STUDIO</span>
+    <a href="#about">BACK TO TOP ↑</a>
+  </footer>
 
-.hero {
-  min-height: 590px;
-  padding: 95px 9% 100px;
-  position: relative;
-  overflow: hidden;
-  background: var(--yellow);
-}
+  <script>
+    const langBtn = document.getElementById("langBtn");
+    let currentLang = "zh";
 
-.eyebrow,
-.tag,
-.count,
-.work-date {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-}
+    langBtn.addEventListener("click", () => {
+      currentLang = currentLang === "zh" ? "en" : "zh";
+      document.documentElement.lang =
+        currentLang === "zh" ? "zh-CN" : "en";
 
-.hero h1 {
-  position: relative;
-  z-index: 2;
-  font-size: clamp(44px, 9vw, 100px);
-  line-height: 1.08;
-  letter-spacing: -4px;
-  max-width: 850px;
-  margin: 24px 0;
-}
+      document.querySelectorAll("[data-zh][data-en]").forEach(el => {
+        el.innerHTML = el.dataset[currentLang];
+      });
+    });
 
-.intro {
-  position: relative;
-  z-index: 2;
-  max-width: 480px;
-  font-size: 15px;
-}
+    // 新闻仅显示已经审核并放入 news.json 的内容。
+    async function loadNews() {
+      const list = document.getElementById("newsList");
+      const status = document.getElementById("newsStatus");
 
-.primary-btn {
-  display: inline-block;
-  margin-top: 22px;
-  padding: 13px 20px;
-  border-radius: 3px;
-  background: var(--ink);
-  color: white;
-  font-size: 12px;
-  font-weight: 800;
-  transition: transform .2s;
-}
+      try {
+        const response = await fetch("./news.json?time=" + Date.now());
+        if (!response.ok) throw new Error("News file not found");
 
-.primary-btn:hover {
-  transform: translateY(-3px);
-}
+        const data = await response.json();
+        list.replaceChildren();
 
-.hero-sticker {
-  position: absolute;
-  z-index: 1;
-  right: 8%;
-  bottom: 65px;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: var(--orange);
-  color: white;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  font-weight: 900;
-  line-height: 1.1;
-  transform: rotate(12deg);
-  font-size: 24px;
-}
+        if (!Array.isArray(data) || data.length === 0) {
+          status.textContent = "暂无已审核新闻 / No approved stories yet.";
+          return;
+        }
 
-.hero-shapes .shape {
-  position: absolute;
-  display: block;
-}
+        data.forEach(item => {
+          const article = document.createElement("article");
+          article.className = "news-card";
 
-.shape-one {
-  width: 170px;
-  height: 170px;
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  right: 18%;
-  top: 80px;
-}
+          const tag = document.createElement("p");
+          tag.className = "tag";
+          tag.textContent = item.category || "DESIGN / TECH";
 
-.shape-two {
-  width: 90px;
-  height: 90px;
-  background: var(--blue);
-  right: 7%;
-  top: 100px;
-  transform: rotate(20deg);
-}
+          const title = document.createElement("h3");
+          title.textContent = currentLang === "zh"
+            ? (item.title_zh || item.title || "")
+            : (item.title_en || item.title || item.title_zh || "");
 
-.shape-three {
-  width: 100px;
-  height: 100px;
-  border: 2px solid var(--ink);
-  left: 48%;
-  bottom: 25px;
-  transform: rotate(45deg);
-}
+          const summary = document.createElement("p");
+          summary.textContent = currentLang === "zh"
+            ? (item.summary_zh || item.summary || "")
+            : (item.summary_en || item.summary || item.summary_zh || "");
 
-.section {
-  padding: 85px 9%;
-}
+          article.append(tag, title, summary);
 
-.section h2,
-.contact h2 {
-  margin: 10px 0 20px;
-  font-size: clamp(30px, 5vw, 52px);
-  line-height: 1.2;
-  letter-spacing: -1.5px;
-}
+          if (item.url && /^https?:\/\//i.test(item.url)) {
+            const link = document.createElement("a");
+            link.href = item.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.className = "news-link";
+            link.textContent = currentLang === "zh"
+              ? "阅读原文 ↗" : "Read source ↗";
+            article.append(link);
+          }
 
-.about {
-  max-width: 1050px;
-}
+          list.append(article);
+        });
+      } catch (error) {
+        status.textContent =
+          "新闻数据尚未配置，请完成后续新闻工作流设置。";
+      }
+    }
 
-.about > p:last-child,
-.news-intro {
-  max-width: 650px;
-}
-
-.section-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 15px;
-  margin-bottom: 35px;
-}
-
-.count {
-  opacity: .65;
-  text-align: right;
-}
-
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-}
-
-.work-card {
-  min-width: 0;
-}
-
-.work-image {
-  position: relative;
-  min-height: 260px;
-  aspect-ratio: 4 / 5;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-
-.work-image > span {
-  position: absolute;
-  top: 14px;
-  left: 15px;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.work-a {
-  background: var(--orange);
-}
-
-.work-b {
-  background: var(--blue);
-}
-
-.work-c {
-  background: #c9d6a2;
-}
-
-.placeholder-art {
-  font-size: clamp(26px, 4vw, 48px);
-  font-weight: 900;
-  line-height: .95;
-  text-align: center;
-  letter-spacing: -2px;
-  transform: rotate(-8deg);
-}
-
-.work-b .placeholder-art {
-  transform: rotate(8deg);
-}
-
-.work-info {
-  padding: 12px 2px 22px;
-}
-
-.tag {
-  color: #68665d;
-}
-
-.work-info h3,
-.news-card h3 {
-  font-size: 21px;
-  line-height: 1.35;
-  margin: 8px 0;
-}
-
-.work-info > p:not(.tag):not(.work-date) {
-  font-size: 13px;
-}
-
-.work-date {
-  opacity: .6;
-  font-size: 10px;
-}
-
-.note {
-  color: #6d6a61;
-  font-size: 12px;
-  margin-top: 18px;
-}
-
-.news-section {
-  background: #e7e0d3;
-}
-
-.news-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 30px;
-}
-
-.news-card {
-  padding: 24px;
-  border: 1px solid var(--line);
-  background: var(--paper);
-}
-
-.news-card > p:not(.tag) {
-  font-size: 14px;
-}
-
-.news-link {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 800;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.contact {
-  padding: 90px 9%;
-  background: var(--orange);
-}
-
-.contact .eyebrow {
-  margin-bottom: 20px;
-}
-
-.contact .primary-btn {
-  background: var(--ink);
-}
-
-footer {
-  padding: 22px 7%;
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  font-size: 10px;
-  font-weight: 800;
-}
-
-@media (max-width: 700px) {
-  .hero {
-    min-height: 610px;
-    padding: 80px 7%;
-  }
-
-  .hero h1 {
-    font-size: clamp(44px, 12vw, 70px);
-    letter-spacing: -2px;
-  }
-
-  .hero-sticker {
-    width: 105px;
-    height: 105px;
-    right: 8%;
-    bottom: 35px;
-    font-size: 18px;
-  }
-
-  .shape-one {
-    width: 110px;
-    height: 110px;
-    right: 12%;
-    top: 40px;
-  }
-
-  .shape-two {
-    width: 55px;
-    height: 55px;
-    right: 6%;
-    top: 65px;
-  }
-
-  .shape-three {
-    width: 55px;
-    height: 55px;
-    left: 12%;
-    bottom: 60px;
-  }
-
-  .section {
-    padding: 60px 7%;
-  }
-
-  .works-grid,
-  .news-list {
-    grid-template-columns: 1fr;
-  }
-
-  .work-image {
-    min-height: 300px;
-    aspect-ratio: 5 / 4;
-  }
-
-  .section-heading {
-    align-items: start;
-    flex-direction: column;
-  }
-
-  .count {
-    text-align: left;
-  }
-
-  footer {
-    padding: 20px 7%;
-    flex-wrap: wrap;
-  }
-}
+    loadNews();
+  </script>
+</body>
+</html>
